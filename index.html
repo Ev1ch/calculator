@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div class="calculator__output">
+          <div class="calculator__result"></div>
+        </div>
+        <div class="calculator__panel">
+          <div class="calculator__buttons calculator__buttons_top">
+            <button
+              class="calculator__button calculator__button_light"
+              data-helper="H"
+            >
+              H
+            </button>
+            <button
+              class="calculator__button calculator__button_light"
+              data-helper="C"
+            >
+              C
+            </button>
+            <button
+              class="calculator__button calculator__button_light"
+              data-helper="`"
+            >
+              <span><sup>+</sup>/<sub>-</sub></span>
+            </button>
+          </div>
+          <div class="calculator__buttons calculator__buttons_right">
+            <button
+              class="calculator__button calculator__button_accent"
+              data-operation="/"
+            >
+              /
+            </button>
+            <button
+              class="calculator__button calculator__button_accent"
+              data-operation="*"
+            >
+              ×
+            </button>
+            <button
+              class="calculator__button calculator__button_accent"
+              data-operation="-"
+            >
+              -
+            </button>
+            <button
+              class="calculator__button calculator__button_accent"
+              data-operation="+"
+            >
+              +
+            </button>
+            <button
+              class="calculator__button calculator__button_accent"
+              data-operation="="
+            >
+              =
+            </button>
+          </div>
+          <div class="calculator__numbers">
+            <button class="calculator__button" data-number="7">7</button>
+            <button class="calculator__button" data-number="8">8</button>
+            <button class="calculator__button" data-number="9">9</button>
+            <button class="calculator__button" data-number="4">4</button>
+            <button class="calculator__button" data-number="5">5</button>
+            <button class="calculator__button" data-number="6">6</button>
+            <button class="calculator__button" data-number="1">1</button>
+            <button class="calculator__button" data-number="2">2</button>
+            <button class="calculator__button" data-number="3">3</button>
+            <button
+              class="calculator__button calculator__button_wider"
+              data-number="0"
+            >
+              0
+            </button>
+            <button class="calculator__button" data-number=".">.</button>
+          </div>
+          <div class="calculator__history">
+            <button class="calculator__history-hide">Hide</button>
+            <ul class="calculator__records"></ul>
+          </div>
+        </div>
+      </div>
+
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>
